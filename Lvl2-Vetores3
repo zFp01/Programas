@@ -1,0 +1,20 @@
+numeros = []
+for i in range(0,10):
+  print("Digite o número:",i)
+  numero = int(input()) #Pega o número digitado pelo usuário
+  numeros.append(numero) #Armazena o número no vetor
+
+#Solicita um número a ser buscado no vetor
+print("Digite o número que deseja buscar")
+numero = int(input())
+
+#Efetua a busca
+encontrou = False
+for i in range(0,10):
+  if numeros[i] == numero:
+    print("Número encontrado na posição",i)
+    encontrou = True
+    break
+
+if encontrou == False:
+  print("Esse número não está no vetor.")
