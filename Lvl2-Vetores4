@@ -1,0 +1,20 @@
+def bubble_sort(vetor):
+  ordenado = True 
+  tamanho_vet = len(vet) #Obtem o tamanho de vet
+  #Controlar o número de vezes que percorremos o vetor
+  for iter in range(tamanho_vet): 
+    #Controlar o elemento atual que está sendo comparado com o próximo
+    for atual in range(tamanho_vet-iter-1):
+      prox = atual + 1
+      if vet[atual] > vet[prox]:
+        ordenado = False
+        #Efetuo a TROCA
+        aux = vet[atual]
+        vet[atual] = vet[prox]
+        vet[prox] = aux
+    if ordenado == True:
+      break #Faz ele (processador) sair do FOR ITER
+
+vet = [10, 0, 11, -1, 201, 13, 173, 3,123, 231, 23, 5, 78, 451, 9, 32]
+bubble_sort(vet)
+print(vet)
