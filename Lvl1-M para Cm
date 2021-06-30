@@ -1,0 +1,2 @@
+m = float(input("Digite o comprimento em mentros:"))
+print("Seu comprimento em cm é:", m * 100)
