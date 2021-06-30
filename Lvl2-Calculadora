@@ -1,0 +1,22 @@
+print("Caso você queira:")
+print("1 - Adição")
+print("2 - Subtração")
+print("3 - Divisão")
+print("4 - Multiplicação")
+print("5 - Raiz Quadrada")
+print("6 - Potenciação")
+opcao = int(input())
+x = float(input("Digite um valor para X: "))
+y = float(input("Digite um valor para Y: "))
+if opcao == 1:
+  print("A soma de x+y =", x+y)
+if opcao == 2:
+  print("A subtração de x-y =", x-y)
+if opcao == 3:
+ print("A divisão de x/y =", x/y)
+if opcao == 4:
+  print("A multiplicação de x*y =", x*y)
+if opcao == 5:
+  print("A Raiz Quadrada de x**(1/2) =", x**(1/2))
+if opcao == 6:
+  print("A Potenciação de x**y =", x**y)
