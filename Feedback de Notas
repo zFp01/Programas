@@ -1,0 +1,11 @@
+nota = int(input("Digite sua nota:"))
+if nota == 0:
+  print("Que vergonha!Estude mais")
+if nota > 0 and nota < 5:
+  print ("Precisa estudar mais...")
+if nota >= 5 and nota < 8:
+  print("Pode melhorar, estude!")
+if nota > 8 and nota < 10:
+  print("Falta pouco")
+if nota == 10:
+  print("Parabéns, continue assim!")
