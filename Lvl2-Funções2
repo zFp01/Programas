@@ -1,0 +1,16 @@
+def MaiorElemento(vet):
+    maior = -999999999
+    for x in vet:
+      if x > maior:
+        maior = x
+    return maior
+
+def SomaElementos(vet):
+  soma = 0
+  for x in vet:
+    soma = soma + x
+  return soma
+
+vet = [20, -30,500,800]
+print("Maior Elemento:",MaiorElemento(vet))
+print("SomaElementos", SomaElementos(vet))
