@@ -1,0 +1,9 @@
+resposta = input("Olá, gostaria de saber qual será o salário do senhor(a) esse mês?")
+if resposta == "não": 
+  print("ok, até a próxima!")
+if resposta == "sim":
+  print("Legal, Primeiro. Quanto o senhor(a) ganha por hora?(responda em reais)")
+  d = float(input())
+  print("Beleza, agora informe o número de horas que trabalhou esse mês:")
+  h = float(input())
+  print("O seu Salário esse mês é:", d*h)
