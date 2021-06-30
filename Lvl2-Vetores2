@@ -1,0 +1,18 @@
+notas = []
+
+#Leio todas as notas
+for i in range(5):
+  print("Digite a nota do aluno",i)
+  nota = float(input())
+  if nota == -1:
+    break
+  notas.append(nota)
+
+#Acumulo o valor das notas
+notas_somadas = 0
+for nota in notas:
+  notas_somadas = notas_somadas + nota
+
+media = notas_somadas / len(notas)
+
+print("A média é:", media)
