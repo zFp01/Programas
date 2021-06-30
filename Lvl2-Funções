@@ -1,0 +1,21 @@
+def Somar(a,b):
+  return a+b
+
+def Subtrair(a,b):
+  return a-b
+
+x = float(input("Digite o valor de X:"))
+y = float(input("Digite o valor de Y:"))
+
+print("O que deseja fazer:")
+print("1 - Somar")
+print("2 - Subtrair")
+escolha = int(input())
+
+if escolha == 1:
+  resultado = Somar(x,y)
+  print(resultado)
+
+if escolha == 2:
+  resultado = Subtrair(x,y)
+  print(resultado)
