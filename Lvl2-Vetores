@@ -1,0 +1,20 @@
+notas = []
+contador = 1  
+#Leio as todas dos alunos   
+while contador <= 15:
+  nota = float(input("Digite a nota do aluno:"))
+  if nota == -1:
+    break #Sai do While
+  notas.append(nota) #Insere a nota no final do vetor
+  contador = contador + 1 #Incrementa o aluno atual
+
+#Acumulo a soma de notas
+soma_notas = 0
+for nota in notas:
+  soma_notas = soma_notas + nota
+
+#Calculo a média
+media = soma_notas / len(notas)
+
+# Imprimo a media
+print("A media é:", media)
